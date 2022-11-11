@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document*/body {
+	background-image: url('backgroundmobile.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+li a:hover {
+	color: orange;
+	transition: all .5s ease 0s;
+}
+
+section {
+	width: 100%;
+	height: 95vh;
+	position: relative;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	box-shadow: 2px 2px rgb(0, 0, 0, 0, 2);
+	padding: 0px 5%;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li a {
+	margin: 20px;
+	font-family: monospace;
+	color: white;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.logo {
+	font-family: monospace;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	background: linear-gradient(to right, #fb5b0c 10%, #e6de5f 50%, #fb5b0c 90%);
+	background-size: 200% auto;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animate 2s linear infinite;
+}
+
+.active {
+	color: orange;
+	font-weight: bold;
+}
+
+.p-1 {
+	font-family: monospace;
+	font-weight: bold;
+	color: white;
+	font-size: 14px;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 0px solid black;
+	padding-right: 5px;
+	animation: p1 2s steps(20) infinite alternate, blink 0.7s infinite;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.p-2 {
+	font-family: monospace;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: white;
+	font-size: 17px;
+	padding-top: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 0px solid black;
+	padding-right: 5px;
+	animation: p2 2s steps(20) infinite alternate, blink 0.7s infinite;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.p-3 {
+	font-family: monospace;
+	color: white;
+	font-size: 14px;
+	line-height: 25px;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.text-container {
+	position: absolute;
+	left: 23%;
+	top: 50%;
+	transform: translate(-23%, -50%);
+	padding: auto;
+	flex-wrap: wrap;
+	width: max-content;
+}
+
+.ig-logo {
+	width: 24px;
+	height: 24px;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.tw-logo {
+	width: 24px;
+	height: 24px;
+}
+
+@media only screen and (max-width: 680px) {
+	#maincontent {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+}
+
+@keyframes p1 {
+	0% {
+		width: 0%;
+		visibility: hidden;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes p2 {
+	0% {
+		width: 0%;
+		visibility: hidden;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+	100% {
+		border-color: black;
+	}
+}
+
+@keyframes animate {
+	to {
+		background-position: 200% center;
+	}
+}

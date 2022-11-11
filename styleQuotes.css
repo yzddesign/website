@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document*/body {
+	background-image: url('backgroundmobile.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+li a:hover {
+	color: orange;
+	transition: all .5s ease 0s;
+}
+
+section {
+	width: 100%;
+	height: 95vh;
+	position: relative;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	box-shadow: 2px 2px rgb(0, 0, 0, 0, 2);
+	padding: 0px 5%;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li a {
+	margin: 20px;
+	font-family: monospace;
+	color: white;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.logo {
+	font-family: monospace;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	background: linear-gradient(to right, #fb5b0c 10%, #e6de5f 50%, #fb5b0c 90%);
+	background-size: 200% auto;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animate 2s linear infinite;
+}
+
+.active {
+	color: orange;
+	font-weight: bold;
+}
+
+.quotes {
+	margin-top: 40px;
+	font-family: monospace;
+	color: white;
+	font-size: 15px;
+	flex-wrap: wrap;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+h2 a {
+	color: white;
+}
+
+h2 a:hover {
+	color: orange;
+	transition: all .5s ease 0s;
+}
+
+@media screen and (maxi-width: 680px) {
+	#maincontent {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+}
+
+@keyframes animate {
+	to {
+		background-position: 200% center;
+	}
+}
